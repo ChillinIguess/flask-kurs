@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn">
+
+        <form method="POST">
+        <label for="navn">E-post:</label>
+        <input type="text" id="epost" name="epost">
+
+        <form method="POST">
+        <label for="navn">Alder:</label>
+        <input type="text" id="alder" name="alder">
+        
+      
+        
+        
+        <form method="POST">
+
+        <label for="navn">Kommentar:</label>
+        <textarea name="kommentar" id="kommentar"></textarea>
+
+        <button type="submit">Registrer</button>
+
+       
+    </form>
+</body>
+</html>

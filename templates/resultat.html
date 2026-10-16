@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultat</title>
+</head>
+<body>
+    <h1>Registrering mottatt</h1>
+
+    <p>Navn: {{ navn }}</p>
+    <p>E-post: {{ epost }}</p>
+    <p>Alder: {{ alder }}</p>
+    <p>Kommentar: {{ kommentar }}</p>
+
+    {% if alder >= 18 %}
+    <p>Du er myndig.</p>
+    {% else %}
+    <p>Du er ikke myndig.</p>
+    {% endif %}
+</body>
+</html>

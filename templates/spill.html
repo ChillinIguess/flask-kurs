@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h1>Dette noen av mine favoritt rougelikes</h1>
+    <ol>
+        {% for element in spill %}
+        <li>{{ element }}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
